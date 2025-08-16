@@ -1,0 +1,23 @@
+{
+    "home": {
+        "hero": {
+            "switchLanguage": "हिंदी पर स्विच करें",
+            "title": "R A N G I S H",
+            "subtitle": "Celebrating Art & Heritage",
+            "button1": "View Gallery",
+            "button2": "Learn More"
+        },
+        "aboutMe": {
+            "title": "About Me",
+            "description": "I am a passionate photographer with a love for capturing the beauty of the world."
+        },
+        "contactMe": {
+            "title": "Contact Me",
+            "description": "Feel free to reach out for collaborations or inquiries."
+        }
+    },
+    "gallery": {
+        "title": "Gallery",
+        "description": "Explore my collection of paintings and photographs."
+    }
+}
