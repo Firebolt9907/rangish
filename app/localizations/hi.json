@@ -1,7 +1,7 @@
 {
     "home": {
         "hero": {
-            "switchLanguage": "Switch to English",
+            "switchLanguage": "हिंदी पर स्विच करें",
             "title": "रंगिश",
             "subtitle": "कला और विरासत का उत्सव",
             "button1": "गैलरी देखें",
@@ -10,6 +10,9 @@
         "aboutMe": {
             "title": "मेरे बारे में",
             "description": "मैं एक उत्साही फोटोग्राफर हूँ जिसे दुनिया की सुंदरता को कैप्चर करने का शौक है।"
+        },
+        "featuredProducts": {
+            "title": "विशेष उत्पाद"
         },
         "contactMe": {
             "title": "मुझसे संपर्क करें",

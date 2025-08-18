@@ -1,15 +1,22 @@
 {
     "home": {
         "hero": {
-            "switchLanguage": "हिंदी पर स्विच करें",
+            "switchLanguage": "Switch to English",
             "title": "R A N G I S H",
             "subtitle": "Celebrating Art & Heritage",
-            "button1": "View Gallery",
+            "button1": "View Products",
             "button2": "Learn More"
         },
         "aboutMe": {
-            "title": "About Me",
-            "description": "I am a passionate photographer with a love for capturing the beauty of the world."
+            "title": "About Vartika",
+            "description": "Vartika coming from a tribal state of Jharkhand, and a great passion in her heart towards Indian art &  Culture, inspired her  to discover RANGISH. Driven by an enthusiasm for an Indian art  that makes India stand out with its vibrant and intricate expression of the country's rich cultural heritage. Spanning thousand of years, it has evolved through Various dynasties, regions and influences,making it one of the most diverse artistic traditions in the world.The uniqueness of Indian art lies it's historical depth, diverse style and it's deep connection with the land tells everything about an Indian art.Indian flora and Fauna, and it's rich cultural diversity inspired Vartika to take Indian art to another level in apparels. It is also noticeable that indian women from Indian states and different parts of our country loves to wear variety of apparels from north to south and east to west. In this regard, Vartika applied her capacity to depict Indian art and culture into different kinds of females attires. She visions to spread India's cultural art into apparels."
+        },
+        "ourStory": {
+            "title": "Our Story",
+            "description": "Rangish which is derived from the term called Rang - also known as colouring  in English. Rangish also means the Celebration of colours as the tagline says \"Celebration of Art & Heritage\". Rangish is a brand that celebrates our beautiful daily lives and our living culture. It is a magic of Indian art and imagination.A platform of multicultural togetherness.Rangish creates gifts for people from people . It supports local economy.It is a celebration of Craftsmanship, Community and Culture. We promise each piece is attention Grabbing in its own way. Indian art says a lot about who we are and what we stands for and how far we came together .Rangish being a canvas for an artist   celebrating Indian art with great pride and joy towards its rich Heritage."
+        },
+        "featuredProducts": {
+            "title": "Featured Products"
         },
         "contactMe": {
             "title": "Contact Me",

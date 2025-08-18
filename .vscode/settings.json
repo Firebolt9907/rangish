@@ -2,4 +2,5 @@
     "i18n-ally.localesPaths": [
         "app/localizations"
     ],
+    "i18n-ally.keystyle": "nested",
 }

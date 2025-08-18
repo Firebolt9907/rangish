@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useState, type FC } from 'react'
 import ShimmerButton from './subcomponents/shimmerButton'
 import ImageData from '~/components/enums/imageData'
+import isHindi from './scripts/isHindi'
 
 interface ThumbnailProps {
   imageData?: ImageData
@@ -16,7 +17,7 @@ const layoutTransition = {
 } as const
 
 const Thumbnail: FC<ThumbnailProps> = ({
-  imageData = new ImageData("", "", "", '', '', ""),
+  imageData = new ImageData("", "", "", "", '', '', ""),
   loadingIndex = 0,
   unbounded = false
 }) => {
@@ -139,7 +140,7 @@ const Thumbnail: FC<ThumbnailProps> = ({
                 layoutId={`desc-${imageData.webpSrc}`}
                 className='text-3xl font-bold mb-1'
               >
-                {imageData.description}
+                {imageData.englishDescription}
               </motion.h3>
               <motion.p layoutId={`desc-u${imageData.webpSrc}`} className='text-base'>
                 {imageData.location}
@@ -193,7 +194,7 @@ const Thumbnail: FC<ThumbnailProps> = ({
         tile={true}
         loadingIndex={loadingIndex}
         borderless={true}
-        description={imageData.description}
+        description={isHindi() ? imageData.hindiDescription : imageData.englishDescription}
       />
     </motion.div>
   )

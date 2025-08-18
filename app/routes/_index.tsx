@@ -1,8 +1,9 @@
-import NewReleases from '~/sections/newReleases'
+import FeaturedProducts from '~/sections/featuredProducts'
 import HomeHero from '~/sections/homeHero'
 import AboutMe from '~/sections/aboutMe'
 import ContactMe from '~/sections/contactMe'
 import type { Route } from '../+types/root'
+import OurStory from '~/sections/ourStory'
 
 
 export function meta({ }: Route.MetaArgs) {
@@ -18,9 +19,11 @@ export default function Home() {
 
       <HomeHero />
 
-      <AboutMe />
+      <FeaturedProducts />
 
-      <NewReleases />
+      <OurStory />
+
+      <AboutMe />
 
       <ContactMe />
 

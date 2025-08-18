@@ -7,7 +7,7 @@ import hi from "./hi.json";
 i18n
     .use(initReactI18next)
     .init({
-        lng: "hi",
+        lng: "en",
         fallbackLng: "en",
         debug: true,
         resources: {

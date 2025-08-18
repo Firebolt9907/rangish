@@ -1,4 +1,4 @@
-import NewReleases from '~/sections/newReleases'
+import FeaturedProducts from '~/sections/featuredProducts'
 import HomeHero from '~/sections/homeHero'
 import AboutMe from '~/sections/aboutMe'
 import ContactMe from '~/sections/contactMe'

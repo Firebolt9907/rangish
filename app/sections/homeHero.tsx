@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Button from '~/components/button'
 import RedirectButton from '~/components/redirectButton'
+import isHindi from '~/components/scripts/isHindi'
 import isMobile from '~/components/scripts/isMobile'
 import ShimmerButton from '~/components/subcomponents/shimmerButton'
 import SwitchLanguageButton from '~/components/switchLanguageButton'
@@ -36,21 +37,23 @@ const HomeHero: React.FC = () => {
 
   return (
     <LayoutGroup>
-      <div style={{ height: "110vh", marginBottom: "-110vh" }}><div className='flex flex-row sticky justify-center top-5 z-1000'>
-        <SwitchLanguageButton
-          handleClick={() => {
-            i18n.changeLanguage(i18n.language === "en" ? "hi" : "en")
-          }}
-          borderless={true}
-          title={'switchLanguage'}
-          content={
-            <motion.p className='text-center text-3xl' style={{ margin: "15px 30px" }}>
-              {t("home.hero.switchLanguage")}
-            </motion.p>
-          }
-          loadingIndex={6}
-        />
-      </div></div>
+      <div style={{
+        height: "110vh", marginBottom: "-110vh"
+      }}><div className='flex flex-row sticky justify-end top-5 mr-12 z-1000 opacity-80'>
+          <SwitchLanguageButton
+            handleClick={() => {
+              i18n.changeLanguage(isHindi() ? "en" : "hi")
+            }}
+            borderless={true}
+            title={'switchLanguage'}
+            content={
+              <motion.p className='text-center text-xl' style={{ margin: "10px 20px" }}>
+                {t("home.hero.switchLanguage", { lng: isHindi() ? "en" : "hi" })}
+              </motion.p>
+            }
+            loadingIndex={6}
+          />
+        </div></div>
       <div style={{ height: maxTopMargin + height + "px" }}>
         <motion.div
           className='h-screen w-full sticky overflow-hidden'
@@ -71,7 +74,7 @@ const HomeHero: React.FC = () => {
           >
             <motion.img
               className='h-screen w-screen object-cover'
-              src='https://github.com/Firebolt9907/sharmaPhotography/blob/master/photos/PXL_20250728_215412293.MP.jpg?raw=true'
+              src='https://raw.githubusercontent.com/Firebolt9907/rangishData/main/jpg/image_picker_380BDF36-A1B3-44E8-86C8-D53A72E04D7B-93725-00000300599EB587.jpg'
               initial={{ opacity: 0, borderRadius: '20px', scale: 0.9 }}
               animate={{
                 opacity: 1,
@@ -87,7 +90,7 @@ const HomeHero: React.FC = () => {
               }}
             ></motion.div>
           </motion.div>
-          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col'>
+          <div className='absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col'>
             <motion.div
               animate={{ scale: 1 + scrollY * 0.1 }}
               transition={{ duration: 0 }}
@@ -179,7 +182,8 @@ const HomeHero: React.FC = () => {
                 rotateX: 180,
                 textAlign: 'center',
                 fontSize: '80px',
-                zIndex: 2
+                zIndex: 2,
+                color: "black"
               }}
               initial={{ bottom: '10px' }}
               animate={{ bottom: '40px' }}
